@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class StuDatabaseHelper {
 
-    private static final int dbVersion = 12;
+    private static final int dbVersion = 13;
     private static final String tablename = "attend";
     private static final String dbName = "stutracker.db";
     private static final String stuID = "_id";
