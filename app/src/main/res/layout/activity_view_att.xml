@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team3.wirelessattendance.ViewAtt"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/view_list">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#ff8d8d8d"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView android:text="23 - 11 - 15"
+            android:id="@+id/dv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="10pt"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

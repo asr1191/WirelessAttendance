@@ -1,0 +1,108 @@
+<!--FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:alpha="1"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/box">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+
+            android:id="@+id/editText"
+            android:layout_gravity="center"
+            android:layout_weight="0"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_btn"
+            android:background="#858585"
+            android:onClick="closebox"
+            android:layout_gravity="center"
+            android:text="Done"/>
+
+
+    </LinearLayout>
+    -->
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:context=".scan"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select date:"
+            android:gravity="center"
+            android:id="@+id/selectd"
+            android:textSize="5pt"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:id="@+id/d_text"
+            android:clickable="true"
+            android:textSize="10pt"
+            android:paddingTop="1dp"
+            android:text="Date Not Set"
+            android:editable="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0/5"
+            android:gravity="center"
+            android:textSize="50pt"
+            android:paddingTop="70dp"
+            android:layout_weight="0"
+            android:id="@+id/attend_val"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="0.0% attendance today"
+            android:textSize="8pt"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/attend_per"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_btn"
+            android:id="@+id/scanbtn"
+            android:onClick="startList"
+            android:layout_weight="0"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_btn"
+            android:id="@+id/viewbtn"
+            android:onClick="viewList"
+            android:layout_weight="0"/>
+
+    </LinearLayout>

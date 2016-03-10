@@ -1,0 +1,46 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/roll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textSize="30dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:text="8"
+        android:gravity="center_vertical" />
+
+
+    <!--CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/checkBox"
+        android:checked="true"
+        android:singleLine="false"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:enabled="false"
+        android:paddingRight="10dp" -->
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView android:id="@+id/name_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Amal S Raj" />
+
+        <TextView android:id="@+id/address_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="00:1C:B3:09:85:15" />
+    </LinearLayout>
+</LinearLayout>

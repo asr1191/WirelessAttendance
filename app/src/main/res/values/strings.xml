@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Wireless Attendance</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list">List</string>
+    <string name="scan_btn">Take Attendance</string>
+    <string name="view_btn">View Attendance</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_date">DateActivity</string>
+    <string name="title_activity_view_att">ViewAtt</string>
+</resources>

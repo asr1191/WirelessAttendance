@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="team3.wirelessattendance.list"
+    android:weightSum="1">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:id="@+id/studs_list"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff8d8d8d"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:padding="3dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:layout_weight="0.5"
+            android:onClick="btscan"
+            android:paddingRight="3dp"
+            android:id="@+id/scan_btn" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:onClick="stopscan"
+            android:layout_weight="0.5"
+            android:paddingLeft="3dp"
+            android:clickable="true"
+            android:id="@+id/stop_btn"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+
+</LinearLayout>
